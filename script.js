@@ -1,6 +1,6 @@
 //your JS code here. If required.
-let player1 = document.getElementById('player-1');
-let player2 = document.getElementById('player-2');
+let player1 = document.getElementById('player1');
+let player2 = document.getElementById('player2');
 // console.log(player2)
 let boxList = document.querySelectorAll('.box');
 let turn = 'X';
