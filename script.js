@@ -3,14 +3,14 @@ let player1 = document.getElementById('player1');
 let player2 = document.getElementById('player2');
 // console.log(player2)
 let boxList = document.querySelectorAll('.box');
-let turn = 'X';
+let turn = 'x';
 let isGameOver = false;
 let form = document.querySelector('form');
 
 
 //Function to change the turn
 const changeTurn = function () {
-  return turn === 'X' ? 'O' : 'X';
+  return turn === 'x' ? 'o' : 'x';
 };
 
 //Function to check for a win
@@ -49,12 +49,12 @@ boxList.forEach((element) => {
       turn = changeTurn();
       checkWin();
       if (isGameOver) {
-        const winner = turn === 'O' ? player1.value : player2.value;
+        const winner = turn === 'o' ? player1.value : player2.value;
         document.querySelector(
           '.message'
         ).innerText = `${winner}, congratulations you won!`;
       } else {
-        const player = turn === 'X' ? player1.value : player2.value;
+        const player = turn === 'x' ? player1.value : player2.value;
         document.querySelector('.message').innerText = `${player}, you're up`;
       }
     }
