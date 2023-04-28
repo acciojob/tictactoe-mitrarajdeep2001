@@ -55,7 +55,7 @@ boxList.forEach((element) => {
         ).innerText = `${winner}, congratulations you won!`;
       } else {
         const player = turn === 'x' ? 'player1' : 'player2';
-        document.querySelector('.message').innerText = `${player}, you're up`;
+        document.querySelector('.message').innerText = `${player}, you\'re up`;
       }
     }
   });
