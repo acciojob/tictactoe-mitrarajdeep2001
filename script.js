@@ -49,12 +49,12 @@ boxList.forEach((element) => {
       turn = changeTurn();
       checkWin();
       if (isGameOver) {
-        const winner = turn === 'o' ? player1.value : player2.value;
+        const winner = turn === 'o' ? player1 : player2;
         document.querySelector(
           '.message'
         ).innerText = `${winner}, congratulations you won!`;
       } else {
-        const player = turn === 'x' ? player1.value : player2.value;
+        const player = turn === 'x' ? player1 : player2;
         document.querySelector('.message').innerText = `${player}, you're up`;
       }
     }
